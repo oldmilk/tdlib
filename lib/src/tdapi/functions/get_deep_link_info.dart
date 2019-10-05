@@ -16,6 +16,11 @@ class GetDeepLinkInfo extends TdFunction {
     return {"@type": CONSTRUCTOR, "link": this.link, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "getDeepLinkInfo";
 
   @override

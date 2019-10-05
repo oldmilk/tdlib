@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tdlib/td_client.dart';
+// import 'package:tdlib/td_api.dart';
 
 void main() => runApp(MyApp());
 
@@ -43,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
    */
     int oldClientId = clientId;
     int newClientId = await client.createClient();
+
     setState(() {
       clientId = newClientId;
     });

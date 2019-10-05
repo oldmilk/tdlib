@@ -16,6 +16,11 @@ class SearchPublicChats extends TdFunction {
     return {"@type": CONSTRUCTOR, "query": this.query, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "searchPublicChats";
 
   @override

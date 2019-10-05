@@ -26,5 +26,10 @@ class AddChatMembers extends TdFunction {
   static const String CONSTRUCTOR = "addChatMembers";
 
   @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+  
+  @override
   String getConstructor() => CONSTRUCTOR;
 }

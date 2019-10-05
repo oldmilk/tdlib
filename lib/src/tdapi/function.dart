@@ -4,4 +4,5 @@ abstract class TdFunction {
   String constructor;
   Map<String, dynamic> toJson();
   String getConstructor();
+  void setExtra(dynamic);
 }

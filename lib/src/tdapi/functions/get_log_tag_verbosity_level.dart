@@ -16,6 +16,11 @@ class GetLogTagVerbosityLevel extends TdFunction {
     return {"@type": CONSTRUCTOR, "tag": this.tag, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "getLogTagVerbosityLevel";
 
   @override

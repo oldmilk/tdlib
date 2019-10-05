@@ -23,6 +23,11 @@ class SetCustomLanguagePack extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "setCustomLanguagePack";
 
   @override

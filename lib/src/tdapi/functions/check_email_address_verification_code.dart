@@ -16,6 +16,11 @@ class CheckEmailAddressVerificationCode extends TdFunction {
     return {"@type": CONSTRUCTOR, "code": this.code, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "checkEmailAddressVerificationCode";
 
   @override

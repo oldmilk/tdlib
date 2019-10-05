@@ -16,6 +16,11 @@ class GetStickerSet extends TdFunction {
     return {"@type": CONSTRUCTOR, "set_id": this.setId, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "getStickerSet";
 
   @override

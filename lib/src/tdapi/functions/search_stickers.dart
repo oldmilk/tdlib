@@ -23,6 +23,11 @@ class SearchStickers extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+  
   static const String CONSTRUCTOR = "searchStickers";
 
   @override

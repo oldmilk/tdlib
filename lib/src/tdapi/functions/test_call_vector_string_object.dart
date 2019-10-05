@@ -19,6 +19,11 @@ class TestCallVectorStringObject extends TdFunction {
       "@extra": this.extra
     };
   }
+  
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
 
   static const String CONSTRUCTOR = "testCallVectorStringObject";
 

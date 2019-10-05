@@ -26,6 +26,11 @@ class SendBotStartMessage extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "sendBotStartMessage";
 
   @override

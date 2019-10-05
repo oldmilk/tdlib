@@ -16,6 +16,11 @@ class DeleteAccount extends TdFunction {
     return {"@type": CONSTRUCTOR, "reason": this.reason, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "deleteAccount";
 
   @override

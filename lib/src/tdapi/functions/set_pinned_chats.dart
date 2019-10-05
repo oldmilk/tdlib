@@ -20,6 +20,11 @@ class SetPinnedChats extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "setPinnedChats";
 
   @override

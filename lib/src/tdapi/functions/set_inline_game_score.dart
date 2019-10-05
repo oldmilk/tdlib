@@ -37,6 +37,11 @@ class SetInlineGameScore extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "setInlineGameScore";
 
   @override

@@ -16,6 +16,11 @@ class GetAttachedStickerSets extends TdFunction {
     return {"@type": CONSTRUCTOR, "file_id": this.fileId, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "getAttachedStickerSets";
 
   @override

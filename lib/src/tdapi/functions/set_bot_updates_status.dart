@@ -23,6 +23,11 @@ class SetBotUpdatesStatus extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "setBotUpdatesStatus";
 
   @override

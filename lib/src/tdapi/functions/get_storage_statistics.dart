@@ -20,6 +20,11 @@ class GetStorageStatistics extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "getStorageStatistics";
 
   @override

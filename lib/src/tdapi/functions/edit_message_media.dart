@@ -33,6 +33,11 @@ class EditMessageMedia extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "editMessageMedia";
 
   @override

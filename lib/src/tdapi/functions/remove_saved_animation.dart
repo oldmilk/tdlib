@@ -20,6 +20,11 @@ class RemoveSavedAnimation extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "removeSavedAnimation";
 
   @override

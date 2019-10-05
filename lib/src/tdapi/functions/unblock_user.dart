@@ -16,6 +16,11 @@ class UnblockUser extends TdFunction {
     return {"@type": CONSTRUCTOR, "user_id": this.userId, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "unblockUser";
 
   @override

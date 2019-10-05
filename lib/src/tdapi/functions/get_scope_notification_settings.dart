@@ -20,6 +20,11 @@ class GetScopeNotificationSettings extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "getScopeNotificationSettings";
 
   @override

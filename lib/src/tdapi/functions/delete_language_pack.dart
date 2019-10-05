@@ -20,6 +20,11 @@ class DeleteLanguagePack extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+  
   static const String CONSTRUCTOR = "deleteLanguagePack";
 
   @override

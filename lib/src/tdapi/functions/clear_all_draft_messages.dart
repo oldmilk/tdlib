@@ -20,6 +20,11 @@ class ClearAllDraftMessages extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "clearAllDraftMessages";
 
   @override

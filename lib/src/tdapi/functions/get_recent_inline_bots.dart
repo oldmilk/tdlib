@@ -15,6 +15,11 @@ class GetRecentInlineBots extends TdFunction {
     return {"@type": CONSTRUCTOR, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "getRecentInlineBots";
 
   @override

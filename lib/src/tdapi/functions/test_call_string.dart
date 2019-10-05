@@ -16,6 +16,11 @@ class TestCallString extends TdFunction {
     return {"@type": CONSTRUCTOR, "x": this.x, "@extra": this.extra};
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "testCallString";
 
   @override

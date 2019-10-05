@@ -27,6 +27,11 @@ class ChangePhoneNumber extends TdFunction {
     };
   }
 
+  @override
+  void setExtra(dynamic value) {
+    this.extra = value;
+  }
+
   static const String CONSTRUCTOR = "changePhoneNumber";
 
   @override
